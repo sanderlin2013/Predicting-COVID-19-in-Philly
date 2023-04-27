@@ -48,3 +48,26 @@ We then performed a PCA (Principal Component Analysis), and after assessing the 
  ![shortend VAR model](Images/shortend_var_model.png)
 
 We used loss functions to evaluate and compare our two models. The baseline model rounded results were MAE: `24.86`, RMSE: `29.80`, MAPE: `0.14`. The VAR model rounded results were MAE: `111.87`, RMSE: `128.19`, MAPE: `0.63`. As the baseline model outperformed the VAR model, we cannot say that using the Google search trends is helpful in predicting COVID-19 cases, at least with the model created in this notebook. 
+
+# Conclusion
+
+Here are the comparisons of the loss function performance between the two models:
+ 
+ ![loss_function_table.](Images/loss_function_table.png)
+
+Unfortunately, the model that incorporated the Google search data performed worse than a model based only on the COVID-19 data. That means that, at least with the model we made, we *could not* use Google's COVID-19 related search data to improve predictions of COVID-19 cases in Philadelphia, at least with the model created in this notebook.
+
+## Recommendations
+
+For now, the best way to predict COVID-19 cases in Philadelphia is by looking at Philadelphia's previous COVID-19 cases.
+
+## Next Steps
+
+There are other types of models that may better utilize the COVID-19 Google search data. Trying out these alternate methods were not possible in the time frame allowed for this project, but may give different results. 
+
+Some possible directions to explore: 
+- Modeling VARMA or VARMAX models.
+- Using crossvalidation and or recursive modeling methods (documentation [here](https://www.statsmodels.org/dev/examples/notebooks/generated/statespace_forecasting.html#Cross-validation)).
+- Using neural networks (e.g. [LSTM](https://towardsdatascience.com/multivariate-time-series-forecasting-with-deep-learning-3e7b3e2d2bcf)) in modeling the data. 
+- Include other possibly relevant data (e.g. when novel COVID-19 outbreaks happened, public opinion about COVID-19, vaccination rates) which could improve the predictive ability of the model.  
+     
