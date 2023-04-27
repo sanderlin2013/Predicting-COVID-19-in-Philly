@@ -34,3 +34,17 @@ As the initial inquiry was about if search trends could be used to predict COVID
 ### Dataset Size
 
 Initially, we had two datasets, one with **68,805** rows and **430** columns, the other with **75,412** rows and **12** columns. After subsetting these datasets to include **only the Philadelphia region**, cleaning the data, and matching the dates of the datasets, we had **991** rows (representing from March 8th, 2020 to November 13th, 2022) and **423** columns.
+
+# Modeling and Evaluation 
+
+The analysis began by cleaning and processing the Google COVID-19 search data and the public Pennsylvania COVID-19 data. Both datasets were then subset so as to only include Philadelphia county. These datasets were then joined together. After joining the datasets and creating some initial visualizations of the case counts data, a train-test split was performed. We then used `pmdarima.arima.auto_arima` to run a grid search. This grid search allowed us to find the optimal orders to model the chosen target variable (7-Day Average COVID-19 Cases) using `statsmodels.tsa.statespace.sarimax.SARIMAX`. This SARIMAX model was our baseline model. 
+
+ ![expanded base model](Images/expanded_base_model.png)
+ ![shortend base model](Images/shortend_base_model.png)
+
+We then performed a PCA (Principal Component Analysis), and after assessing the principal components, we used them along with our target variable in our VAR (Vector Auto Regression) model. The VAR model we implemented used `statsmodels.tsa.statespace.varmax.VARMAX`. 
+
+ ![expanded VAR model](Images/expanded_var_model.png)
+ ![shortend VAR model](Images/shortend_var_model.png)
+
+We used loss functions to evaluate and compare our two models. The baseline model rounded results were MAE: `22.08`, RMSE: `28.91`, MAPE: `0.12`. The VAR model rounded results were MAE: `69.33`, RMSE: `78.06`, MAPE: `0.39`. As the baseline model outperformed the VAR model, we cannot say that using the Google search trends is helpful in predicting COVID-19 cases, at least with the model created in this notebook. 
