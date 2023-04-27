@@ -47,4 +47,4 @@ We then performed a PCA (Principal Component Analysis), and after assessing the 
  ![expanded VAR model](Images/expanded_var_model.png)
  ![shortend VAR model](Images/shortend_var_model.png)
 
-We used loss functions to evaluate and compare our two models. The baseline model rounded results were MAE: `22.08`, RMSE: `28.91`, MAPE: `0.12`. The VAR model rounded results were MAE: `69.33`, RMSE: `78.06`, MAPE: `0.39`. As the baseline model outperformed the VAR model, we cannot say that using the Google search trends is helpful in predicting COVID-19 cases, at least with the model created in this notebook. 
+We used loss functions to evaluate and compare our two models. The baseline model rounded results were MAE: `24.86`, RMSE: `29.80`, MAPE: `0.14`. The VAR model rounded results were MAE: `111.87`, RMSE: `128.19`, MAPE: `0.63`. As the baseline model outperformed the VAR model, we cannot say that using the Google search trends is helpful in predicting COVID-19 cases, at least with the model created in this notebook. 
