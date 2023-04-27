@@ -1,6 +1,6 @@
 # Searching for COVID: Using Google Search Data to Predict COVID-19 Cases in Philadelphia
 
-The city of Philadelphia has been tracking its COVID-19 cases since the beginning of the pandemic. They want to know if they can use Google's COVID-19 related search data to better predict COVID-19 cases in Philadelphia. This would give the city time to better prepare for spikes in COVID-19 cases.  Unfortunately, the model that incorporated the Google search data performed worse than a model based only on the COVID-19 data. (The baseline model rounded results were MAE: `24.86`, RMSE: `29.80`, MAPE: `0.14`. The VAR model rounded results were MAE: `111.87`, RMSE: `128.19`, MAPE: `0.63`.) That means that with the model created we *can not* use Google's COVID-19 related search data to better predict COVID-19 cases in Philadelphia. 
+The **city of Philadelphia** has been tracking its COVID-19 cases since the beginning of the pandemic. They want to know if they can use **Google's COVID-19 related search data** to better predict **COVID-19 cases in Philadelphia**. This would give the city time to better prepare for spikes in COVID-19 cases.  Unfortunately, the model that incorporated the Google search data performed worse than a model based only on the COVID-19 data. (The baseline model rounded results were MAE: `24.86`, RMSE: `29.80`, MAPE: `0.14`. The VAR model rounded results were MAE: `111.87`, RMSE: `128.19`, MAPE: `0.63`.) That means that with the model created we can not use Google's COVID-19 related search data to better predict COVID-19 cases in Philadelphia. 
 
  ![Philly Skyline](Images/Philadelphia_from_the_Delaware_River.png)
 
@@ -55,7 +55,7 @@ Here are the comparisons of the loss function performance between the two models
  
  ![loss_function_table.](Images/loss_function_table.png)
 
-Unfortunately, the model that incorporated the Google search data performed worse than a model based only on the COVID-19 data. That means that, at least with the model we made, we *could not* use Google's COVID-19 related search data to improve predictions of COVID-19 cases in Philadelphia, at least with the model created in this notebook.
+Unfortunately, the model that incorporated the Google search data performed worse than a model based only on the COVID-19 data. That means that we *could not* use Google's COVID-19 related search data to improve predictions of COVID-19 cases in Philadelphia, at least with the model created in this notebook.
 
 ## Recommendations
 
