@@ -94,7 +94,7 @@ The independent variables were downloaded from [Google's Explore COVID-19 Sympto
 
 The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://www.health.pa.gov/topics/disease/coronavirus/pages/Cases.aspx). This data spanned from March 1st, 2020 until March 14, 2023.
 
-Both of these datasets must be downloaded and placed in the `/data` folder (see `.gitignore`) in order to reproduce this notebook. Additionally, the environment requirements can be found in the `requirement.txt` file. 
+Both of these datasets must be downloaded and accessible in order to reproduce this notebook. Additionally, the environment requirements can be found in the `requirement.txt` file. 
 
 For instructions on how to create an environment using a `requirement.txt` file using `pip` see [here](https://www.geeksforgeeks.org/how-to-install-python-packages-with-requirements-txt/).  
 
