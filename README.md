@@ -89,3 +89,15 @@ For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailt
 └── requirements.txt
 ```
 # Reproduction Instructions 
+
+The independent variables were downloaded from [Google's Explore COVID-19 Symptoms Search Trends](https://pair-code.github.io/covid19_symptom_dataset/?country=IE). The data was downloaded from the USA region (sub region of Pennsylvania) at the daily resolution, from 2020, 2021, and 2022. All of the data was from from January 1st, 2020 through November 11th, 2022. 
+
+The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://www.health.pa.gov/topics/disease/coronavirus/pages/Cases.aspx). This data spanned from March 1st, 2020 until March 14, 2023.
+
+Both of these datasets must be downloaded and placed in the `/data` folder (see `.gitignore`) in order to reproduce this notebook. 
+
+Additionally, the environment requirements can be found in the `requirement.txt` file. 
+
+For instructions on how to create an environment using a `requirement.txt` file using `pip` see [here](https://www.geeksforgeeks.org/how-to-install-python-packages-with-requirements-txt/).  
+
+For instructions on how to create an environment using a `requirement.txt` file using `conda` see [here]([https://www.geeksforgeeks.org/how-to-install-python-packages-with-requirements-txt/](https://www.activestate.com/resources/quick-reads/how-to-manage-python-dependencies-with-conda/)). 
