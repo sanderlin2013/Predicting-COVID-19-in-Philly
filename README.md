@@ -90,7 +90,7 @@ For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailt
 ```
 # Reproduction Instructions 
 
-The independent variables were downloaded from [Google's Explore COVID-19 Symptoms Search Trends](https://pair-code.github.io/covid19_symptom_dataset/?country=IE). The data was downloaded from the USA region (sub region of Pennsylvania) at the daily resolution, from 2020, 2021, and 2022. All of the data was from from January 1st, 2020 through November 11th, 2022. 
+The independent variables were downloaded from [Google's Explore COVID-19 Symptoms Search Trends](https://pair-code.github.io/covid19_symptom_dataset/?country=IE). The data was downloaded from the USA region (sub region of Pennsylvania) at the daily resolution, for the years 2020, 2021, and 2022. All of the data was from from January 1st, 2020 through November 11th, 2022. 
 
 The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://www.health.pa.gov/topics/disease/coronavirus/pages/Cases.aspx). This data spanned from March 1st, 2020 until March 14, 2023.
 
