@@ -1,2 +1,3 @@
-# Predicting-COVID-19-in-PA
-Using Google Search Data to Predict COVID-19 Cases in PA
+# Searching for COVID: Using Google Search Data to Predict COVID-19 Cases in Philadelphia, PA
+
+The city of Philadelphia has been tracking its COVID-19 cases since the beginning of the pandemic. They want to know if they can use Google's COVID-19 related search data to better predict COVID-19 cases. If advanced warning could be given via a model that uses search data it would give the city time to better prepare for spikes in COVID-19 cases and increase preventative measures (mask mandates, encouraging social distancing, warn hospitals, etc.) when needed.  Unfortunately, the model we created that incorporated the Google search data performed worse than a model based solely on the COVID-19 data. 
