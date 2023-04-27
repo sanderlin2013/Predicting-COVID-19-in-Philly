@@ -69,5 +69,22 @@ Some possible directions to explore:
 - Modeling VARMA or VARMAX models.
 - Using crossvalidation and or recursive modeling methods (documentation [here](https://www.statsmodels.org/dev/examples/notebooks/generated/statespace_forecasting.html#Cross-validation)).
 - Using neural networks (e.g. [LSTM](https://towardsdatascience.com/multivariate-time-series-forecasting-with-deep-learning-3e7b3e2d2bcf)) in modeling the data. 
-- Include other possibly relevant data (e.g. when novel COVID-19 outbreaks happened, public opinion about COVID-19, vaccination rates) which could improve the predictive ability of the model.  
+- Include other relevant data (e.g. when novel COVID-19 outbreaks happened, public opinion about COVID-19, vaccination rates) which could improve the predictive ability of the model.  
      
+## For More Information
+See the full analysis in the [Jupyter Notebook](https://github.com/sanderlin2013/Predicting-COVID-19-in-Philly/blob/main/notebook.ipynb) or review this [presentation](https://github.com/sanderlin2013/Zillow-Timeseries-Project/blob/main/presentation.pdf).
+
+For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailto:sanderlin2013@gmail.com)
+
+## Repository Structure
+
+```
+├── Images/
+├── sandbox/
+├── .gitignore
+├── README.md
+├── notebook.ipynb
+├── notebook.pdf
+├── presentation.pdf
+└── requirements.txt
+```
