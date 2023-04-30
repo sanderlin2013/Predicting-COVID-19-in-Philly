@@ -39,13 +39,13 @@ Initially, we had two datasets, one with **68,805** rows and **430** columns, th
 
 The analysis began by cleaning and processing the Google COVID-19 search data and the public Pennsylvania COVID-19 data. Both datasets were then subset so as to only include Philadelphia county. These datasets were then joined together. After joining the datasets and creating some initial visualizations of the case counts data, a train-test split was performed. We then used `pmdarima.arima.auto_arima` to run a grid search. This grid search allowed us to find the optimal orders to model the chosen target variable (7-Day Average COVID-19 Cases) using `statsmodels.tsa.statespace.sarimax.SARIMAX`. This SARIMAX model was our baseline model. 
 
- ![expanded base model](Images/expanded_base_model.png)
- ![shortend base model](Images/shortend_base_model.png)
+ ![expanded base model](Images/exp_base_model.png)
+ ![shortend base model](Images/short_base_model.png)
 
-We then performed a PCA (Principal Component Analysis), and after assessing the principal components, we used them along with our target variable in our VAR (Vector Auto Regression) model. The VAR model we implemented used `statsmodels.tsa.statespace.varmax.VARMAX`. 
+This SARIMAX model was our baseline model. We then performed a scree plot to find the optimal number of components to run in our PCA (Principal Component Analysis). Based on the scree plot we chose to reduce our dimensions to two components.The goal of using PCA at this point was to reduce the dimensions of our data into a manageable number of components and then hopefully use those components to build a better but not overly complex model. After assessing the principal components, we used them along with our target variable in our VAR (Vector Auto Regression) model. The VAR model we implemented used `statsmodels.tsa.statespace.varmax.VARMAX`. 
 
- ![expanded VAR model](Images/expanded_var_model.png)
- ![shortend VAR model](Images/shortend_var_model.png)
+ ![expanded VAR model](Images/exp_var_model.png)
+ ![shortend VAR model](Images/short_var_model.png)
 
 We used loss functions to evaluate and compare our two models. The baseline model rounded results were MAE: `24.86`, RMSE: `29.80`, MAPE: `0.14`. The VAR model rounded results were MAE: `111.87`, RMSE: `128.19`, MAPE: `0.63`. As the baseline model outperformed the VAR model, we cannot say that using the Google search trends is helpful in predicting COVID-19 cases, at least with the model created in this notebook. 
 
