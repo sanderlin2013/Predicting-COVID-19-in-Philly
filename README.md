@@ -68,7 +68,6 @@ There are other types of models that may better utilize the COVID-19 Google sear
 Some possible directions to explore: 
 - Modeling VARMA or VARMAX models.
 - Using crossvalidation and or recursive modeling methods (documentation [here](https://www.statsmodels.org/dev/examples/notebooks/generated/statespace_forecasting.html#Cross-validation)).
-- Using neural networks (e.g. [LSTM](https://towardsdatascience.com/multivariate-time-series-forecasting-with-deep-learning-3e7b3e2d2bcf)) in modeling the data. 
 - Include other relevant data (e.g. when novel COVID-19 outbreaks happened, public opinion about COVID-19, vaccination rates) which could improve the predictive ability of the model.  
      
 ## For More Information
