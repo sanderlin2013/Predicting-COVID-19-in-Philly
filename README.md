@@ -42,7 +42,7 @@ The analysis began by cleaning and processing the Google COVID-19 search data an
  ![expanded base model](Images/expanded_base_model.png)
  ![shortend base model](Images/shortend_base_model.png)
 
-We then performed a PCA (Principal Component Analysis), and after assessing the principal components, we used them along with our target variable in our VAR (Vector Auto Regression) model. The VAR model we implemented used `statsmodels.tsa.statespace.varmax.VARMAX`. 
+This SARIMAX model was our baseline model. We then performed a scree plot to find the optimal number of components to run in our PCA (Principal Component Analysis). Based on the scree plot we chose to reduce our dimensions to two components.The goal of using PCA at this point was to reduce the dimensions of our data into a manageable number of components and then hopefully use those components to build a better but not overly complex model. After assessing the principal components, we used them along with our target variable in our VAR (Vector Auto Regression) model. The VAR model we implemented used `statsmodels.tsa.statespace.varmax.VARMAX`. 
 
  ![expanded VAR model](Images/expanded_var_model.png)
  ![shortend VAR model](Images/shortend_var_model.png)
