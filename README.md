@@ -82,10 +82,10 @@ For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailt
 ├── sandbox/
 ├── .gitignore
 ├── README.md
+├── environment.yml
 ├── notebook.ipynb
 ├── notebook.pdf
-├── presentation.pdf
-└── requirements.txt
+└──presentation.pdf
 ```
 # Reproduction Instructions 
 
