@@ -1,4 +1,4 @@
-name: covid-env
+name: covid-env-2
 channels:
   - defaults
   - conda-forge
