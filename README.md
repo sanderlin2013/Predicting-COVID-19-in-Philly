@@ -110,7 +110,7 @@ In order to to run the notebook one must build the appropriate environment. The 
 For further instructions on how to create an environment using `environment.yml` see [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
 
 ## Running the Notebook
-1. Ensure the environment is built and activated (see "Building the Environment"
+1. Ensure the environment is built and activated (see "Building the Environment")
 1. run `jupyter notebook`
 1. The browser will open a new webpage with your directory 
 1. Click into `notebook.ipynb`
