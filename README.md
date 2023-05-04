@@ -108,8 +108,9 @@ The independent variables were downloaded from [Google's Explore COVID-19 Sympto
 
 The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://data.pa.gov/Covid-19/COVID-19-Aggregate-Cases-Current-Daily-County-Hea/j72v-r42c). The data used in this notebook spanned from March 1st, 2020 until March 14, 2023, but the downloadable data is updated weekly.
 
-### Data Downloads and Instructions
+Links to download the data directly can be found below. 
 
+### Data Downloads and Instructions
 
 1. [2020 Google data](https://storage.cloud.google.com/gcs-public-data---symptom-search/2020/sub_region_1/daily/2020_US_Pennsylvania_daily_symptoms_dataset.csv)
 1. [2021 Google data](https://storage.cloud.google.com/gcs-public-data---symptom-search/2021/sub_region_1/daily/2021_US_Pennsylvania_daily_symptoms_dataset.csv)
