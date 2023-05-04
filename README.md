@@ -91,15 +91,44 @@ For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailt
 
 ## Downloading Data
 
-The independent variables were downloaded from [Google's Explore COVID-19 Symptoms Search Trends](https://pair-code.github.io/covid19_symptom_dataset/?country=IE). The data was downloaded from the USA region (sub region of Pennsylvania) at the daily resolution, for the years 2020, 2021, and 2022. All of the data was from from January 1st, 2020 through November 11th, 2022. 
+### Google Data
 
-The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://www.health.pa.gov/topics/disease/coronavirus/pages/Cases.aspx). This data spanned from March 1st, 2020 until March 14, 2023.
+The independent variables were downloaded from [Google's Explore COVID-19 Symptoms Search Trends](https://pair-code.github.io/covid19_symptom_dataset/?country=IE). The data was downloaded from the USA region (sub region of Pennsylvania) at the daily resolution, for the years 2020, 2021, and 2022. All of the data was from from January 1st, 2020 through November 11th, 2022.
 
-Both of these datasets must be downloaded and accessible in order to reproduce this notebook. 
+**To download the Google data directly click the following links**:
+- [2020 Google data](https://storage.cloud.google.com/gcs-public-data---symptom-search/2020/sub_region_1/daily/2020_US_Pennsylvania_daily_symptoms_dataset.csv)
+- [2021 Google data](https://storage.cloud.google.com/gcs-public-data---symptom-search/2021/sub_region_1/daily/2021_US_Pennsylvania_daily_symptoms_dataset.csv)
+- [2022 Google data](https://storage.cloud.google.com/gcs-public-data---symptom-search/2022/sub_region_1/daily/2022_US_Pennsylvania_daily_symptoms_dataset.csv)
 
-In order to to run the notebook one must build the appropriate environment. The environment requiremnts have been saved in the `environment.yml` file. 
+### PA Data
+
+The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://data.pa.gov/Covid-19/COVID-19-Aggregate-Cases-Current-Daily-County-Hea/j72v-r42c). The data used in this notebook spanned from March 1st, 2020 until March 14, 2023, but the downloadable data is updated weekly.
+
+**To download the PA data directly click the following link**:
+- [PA data](https://data.pa.gov/api/views/j72v-r42c/rows.csv?accessType=DOWNLOAD)
+
+### Prepping Data for Notebook Ingestion
+
+Once the bove data is downloaded, copy all `.csv` files into this repo's directory under a new directory named `data`. The updated file structure should then look like this:
+```
+├── Images/
+├── data/
+     ├── 2020_US_Pennsylvania_daily_symptoms_dataset.csv
+     ├── 2021_US_Pennsylvania_daily_symptoms_dataset.csv
+     ├── 2022_US_Pennsylvania_daily_symptoms_dataset.csv
+     └── COVID-19_Aggregate_Cases_Current_Weekly_County_Health.csv
+├── sandbox/
+├── .gitignore
+├── README.md
+├── environment.yml
+├── notebook.ipynb
+├── notebook.pdf
+└── presentation.pdf
+```
 
 ## Building the Environment
+
+In order to to run the notebook one must build the appropriate environment. The environment requirements have been saved in the `environment.yml` file. 
 
 1. Clone this repository locally (`git clone git@github.com:sanderlin2013/Predicting-COVID-19-in-Philly.git`)
 1. `cd` into the local repo (`cd Predicting-COVID-19-in-Philly`)
