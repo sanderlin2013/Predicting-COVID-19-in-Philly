@@ -85,7 +85,7 @@ For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailt
 ├── environment.yml
 ├── notebook.ipynb
 ├── notebook.pdf
-└──presentation.pdf
+└── presentation.pdf
 ```
 # Reproduction Instructions 
 
