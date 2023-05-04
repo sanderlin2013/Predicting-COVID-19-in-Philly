@@ -89,12 +89,29 @@ For additional info, contact Rachel Sanderlin at [sanderlin2013@gmail.com](mailt
 ```
 # Reproduction Instructions 
 
+## Downloading Data
+
 The independent variables were downloaded from [Google's Explore COVID-19 Symptoms Search Trends](https://pair-code.github.io/covid19_symptom_dataset/?country=IE). The data was downloaded from the USA region (sub region of Pennsylvania) at the daily resolution, for the years 2020, 2021, and 2022. All of the data was from from January 1st, 2020 through November 11th, 2022. 
 
 The target variable was downloaded from [COVID-19 Data for Pennsylvania](https://www.health.pa.gov/topics/disease/coronavirus/pages/Cases.aspx). This data spanned from March 1st, 2020 until March 14, 2023.
 
-Both of these datasets must be downloaded and accessible in order to reproduce this notebook. Additionally, the environment requirements can be found in the `requirement.txt` file. 
+Both of these datasets must be downloaded and accessible in order to reproduce this notebook. 
 
-For instructions on how to create an environment using a `requirement.txt` file using `pip` see [here](https://www.geeksforgeeks.org/how-to-install-python-packages-with-requirements-txt/).  
+In order to to run the notebook one must build the appropriate environment. The environment requiremnts have been saved in the `environment.yml` file. 
 
-For instructions on how to create an environment using a `requirement.txt` file using `conda` see [here](https://www.activestate.com/resources/quick-reads/how-to-manage-python-dependencies-with-conda/). 
+## Building the Environment
+
+1. Clone this repository locally (`git clone git@github.com:sanderlin2013/Predicting-COVID-19-in-Philly.git`)
+1. `cd` into the local repo (`cd Predicting-COVID-19-in-Philly`)
+1. Run `conda env create -f environment.yml`
+1. Wait for environment to be downloaded and installed
+1. Run `conda activate covid-env`
+
+For further instructions on how to create an environment using `environment.yml` see [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
+
+## Running the Notebook
+1. Ensure the environment is built and activated (see "Building the Environment"
+1. run `jupyter notebook`
+1. The browser will open a new webpage with your directory 
+1. Click into `notebook.ipynb`
+1. Run!
